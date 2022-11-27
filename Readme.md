@@ -1,20 +1,22 @@
 # How to participate in the Horse-10 benchmark?
 
+More infomation and nice pictures can be found at [the horse-10 site!](http://www.mackenziemathislab.org/horse10)
+
+
 1) download the data and unzip:
-'''
+
+```
 wget http://deeplabcut.rowland.harvard.edu/datasets/horse10.tar.gz
+
 tar -xvf horse10.tar.gz
-'''
+```
 
 2) Train your model for the three splits!
 
-The downloaded data is in DeepLabCut format with information regarding the splits stored in "/training-datasets/iteration-0/UnaugmentedDataSet_HorsesMay8". We also provide COCO format... TBD!
+The downloaded data is in DeepLabCut format with information regarding the splits stored in "/training-datasets/iteration-0/UnaugmentedDataSet_HorsesMay8". 
 
-3) Evaluate each split on ??
+3) Evaluate each split. To normalize the different horse sizes, we normalize to the nose-eye distance for each horse. Here is some example [code](https://github.com/amathislab/Horse-10-benchmark/blob/master/normalize_errors.py) as well as the relevant distances are stored in this [file](https://github.com/amathislab/Horse-10-benchmark/blob/master/Horsescale.h5).
 
---> put normalizing code
-
-More infomation and nice pictures can be found at [the horse-10 site!](http://www.mackenziemathislab.org/horse10)
 
 # References
 
