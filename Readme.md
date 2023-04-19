@@ -2,13 +2,12 @@
 
 More infomation and nice pictures can be found at [the horse-10 site!](http://www.mackenziemathislab.org/horse10)
 
-
 1) download the data and unzip:
 
-```
-wget http://deeplabcut.rowland.harvard.edu/datasets/horse10.tar.gz
+THe data is available from: https://huggingface.co/datasets/mwmathis/Horse-30
 
-tar -xvf horse10.tar.gz
+```
+tar -xvf horse10.tar.xz
 ```
 
 2) Train your model for the three splits!
